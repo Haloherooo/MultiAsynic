@@ -1,7 +1,7 @@
 from distutils.core import setup
 from setuptools import find_packages
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding = "utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -15,21 +15,19 @@ setup(
     url="xxx",          #项目主页
     packages=find_packages(),  #你要安装的包，通过 find_packages 找到当前目录下有哪些包
     install_requires=["asyncio",
-	                  "aiohttp",
-					  "multiprocessing",
-					  "nest_asyncio"],
+		      "aiohttp",
+		      "multiprocessing",
+		      "nest_asyncio"],
 	license = "MIT Licence",
 	#说明包的分类信息
-    classifiers=[
-		"Development Status :: 2 - Pre-Alpha",
-		"Operating System :: OS Independent",
-		"License :: OSI Approved :: MIT License",
-		"Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-		"Programming Language :: Python :: 3.9",
-		"Programming Language :: Python :: 3.10",
-		"Programming Language :: Python :: 3.11"   
-    ],
+    classifiers=["Development Status :: 2 - Pre-Alpha",
+		 "Operating System :: OS Independent",
+		 "License :: OSI Approved :: MIT License",
+		 "Programming Language :: Python :: 3.5",
+		 "Programming Language :: Python :: 3.6",
+		 "Programming Language :: Python :: 3.7",
+		 "Programming Language :: Python :: 3.8",
+		 "Programming Language :: Python :: 3.9",
+		 "Programming Language :: Python :: 3.10",
+		 "Programming Language :: Python :: 3.11" ],
 )
