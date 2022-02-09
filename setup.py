@@ -18,8 +18,8 @@ setup(
 		      "aiohttp",
 		      "multiprocessing",
 		      "nest_asyncio"],
-	license = "MIT Licence",
-	#说明包的分类信息
+    license = "MIT Licence",
+    #说明包的分类信息
     classifiers=["Development Status :: 2 - Pre-Alpha",
 		 "Operating System :: OS Independent",
 		 "License :: OSI Approved :: MIT License",
